@@ -27,21 +27,6 @@ abstract public class DLens<S,diff,V> {
             return this.update(s, this.dput(s, v, dv));
     }
 
-    //put function via function
-    /*public S put(S s, V v)  {
-        return null;
-    }*/
-
-    /**
-     * Update V using a Function<V,V>, return the updated S
-     *
-    public Function<V, V> modify(Function<V, V> mapper) {
-        return (oldS) -> {
-            V oldV = DLens.get(oldS);  // @param oldvalue: old V; @param extracted: old B
-            V newV = mapper.apply(oldV); // @param transformed: new B; @function mapper is an update function on B
-            return setter.apply(oldS, newV); //get and return the new A.
-        };
-    }*/
 
     //Return a copy of S with the substructure updated.
     //abstract public S update(S s, Diff ds) = S update(s, this.dput(s,v,dv));
