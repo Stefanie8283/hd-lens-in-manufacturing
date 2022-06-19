@@ -2,7 +2,6 @@ package DLensTest;
 
 import AFMs.Asset;
 import AFMs.HFMs;
-//import Utils.Pair;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.commons.lang3.Range;
@@ -149,8 +148,6 @@ public class EstAlgorithm {
                 Pair<Double,Double> timeRange = value.get(buffer);
                 times.add(timeRange.getLeft());
                 times.add(timeRange.getRight());
-                //triList.add(Triple.of(eachPart,timeRange,buffer));
-                //buffers.add(buffer);
             }
             double min = times.stream().min(Comparator.comparing(Double::doubleValue)).get();
             partList.add(new MutablePair<>(eachPart,min));
