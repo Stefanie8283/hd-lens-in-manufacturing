@@ -274,13 +274,9 @@ public class LFMDLens {
 
         //Estimate time stamps for all aggregated buffers
         TreeMap<String, Map<String,Pair<Double, Double>>> estMap = filterAggEst(logMap,aggList);
-        //estMap.keySet().forEach(t -> System.out.println(t+": "+ estMap.get(t)));
         //TreeMap<String, Map<String,Pair<Double, Double>>> estAggMap = estAggBufferTime(estMap,aggList,hfm);
         TreeMap<String, Map<String,Pair<Double, Double>>> estAggMap = estAlgorithm(estMap,aggList,aggBuffers,hfm);
 
-        //System.out.println("Estimated time stamp: ");
-        //estAggMap.keySet().forEach(t -> System.out.println(t+": "+ estAggMap.get(t)));
-        //estMap.keySet().forEach(t -> System.out.println(t+": "+ estMap.get(t)));
 
         //Load the acutal log data from HFM, to be compared with the estimated log
         String HFMLog = "target/data/UseCase"+ caseNo+"/"+ caseNo+"_HFM_log.txt";
@@ -290,8 +286,6 @@ public class LFMDLens {
 
         //Filter out realMap with only aggregated buffers:
         TreeMap<String, Map<String, Pair<Double, Double>>> realAggMap = new TreeMap<>(filterAggReal(realMap,aggBuffers));
-        //System.out.println("Real time stamp: ");
-        //realAggMap.keySet().forEach(t -> System.out.println(t+": "+ realAggMap.get(t)));
 
         //Output the result
         Object[] objects = new Object[5];
