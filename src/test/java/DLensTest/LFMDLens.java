@@ -79,38 +79,6 @@ public class LFMDLens {
         return output;
     }
 
-    /** Composition of getMap */
-    public static TreeMap<String, List<String>> getgetMap(TreeMap<String, List<String>> getMap,HFMs level1){
-        TreeMap<String, List<String>> getgetMap = new TreeMap<>();
-        List<Asset> filter = filterList(level1.getSceneAssets(), (Asset s) -> s.getParentObject()!=null);
-        getMap.keySet().forEach(key -> getMap.get(key).forEach(sub -> {
-            Asset asset = level1.getAssetsByID(sub);
-            for(Asset as: filter) {
-                if(as.getParentObject().equals(asset.getId()))
-                    getgetMap.computeIfAbsent(key, a-> new ArrayList<>()).add(as.getId()); }
-        }));
-
-        System.out.println("--Full Buffer Map After Composition--");
-        System.out.println(getgetMap);
-        return getgetMap;
-    }
-
-    /** Composition of getMap */
-    public static TreeMap<String, List<String>> getgetgetMap(TreeMap<String, List<String>> getMap,HFMs level1){
-        TreeMap<String, List<String>> getgetMap = new TreeMap<>();
-        List<Asset> filter = filterList(level1.getSceneAssets(), (Asset s) -> s.getParentObject()!=null);
-        getMap.keySet().forEach(key -> getMap.get(key).forEach(sub -> {
-            Asset asset = level1.getAssetsByID(sub);
-            for(Asset as: filter) {
-                if(as.getParentObject().equals(asset.getId()))
-                    getgetMap.computeIfAbsent(key, a-> new ArrayList<>()).add(as.getId()); }
-        }));
-
-        System.out.println("--Full Buffer Map After Composition--");
-        System.out.println(getgetMap);
-        return getgetMap;
-    }
-
     /** Order all of the sub-buffers in the aggregation map, with "conncetedTo" sequence */
     public static List<String> orderBuffers(TreeMap<String, List<String>> aggList, HFMs fsm){
         List<String> fullAggList = new ArrayList<>();
