@@ -1,0 +1,527 @@
+{
+    "assets": [
+        {
+            "id": "default_building",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "unit": 0.001
+        },
+        {
+            "assignmentTo": [
+                "productionPlan"
+            ],
+            "id": "AssemblyLine",
+            "type": "http://www.ontoeng.com/factory#AssemblySystem"
+        },
+        {
+            "duration": 86400,
+            "id": "productionPlan",
+            "type": "http://www.ontoeng.com/factory#ProductionPlan"
+        },
+        {
+            "id": "productionSchedule",
+            "parentObject": "productionPlan",
+            "quantity": 17280,
+            "type": "http://www.ontoeng.com/factory#ProductionSchedule"
+        },
+        {
+            "id": "partA.1",
+            "model": "partA",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "partA.2",
+            "model": "partA",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "partA.3",
+            "model": "partA",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "partA.4",
+            "model": "partA",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "partA.5",
+            "model": "partA",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "partA.6",
+            "model": "partA",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "partA.7",
+            "model": "partA",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "partA.8",
+            "model": "partA",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "compB.1",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "compB.2",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "compB.3",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "compB.4",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "compB.5",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "compB.6",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "compB.7",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "id": "compB.8",
+            "type": "http://www.ontoeng.com/factory#Artifact"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_h10"
+            ],
+            "bufferCap": 5,
+            "connectedTo": [
+                "B2"
+            ],
+            "id": "B1",
+            "level": 0,
+            "parentObject": "M1_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#BufferElement"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_h20"
+            ],
+            "bufferCap": 4,
+            "connectedTo": [
+                "M4"
+            ],
+            "id": "B2",
+            "level": 0,
+            "parentObject": "M1_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#BufferElement"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_h30"
+            ],
+            "bufferCap": 10,
+            "connectedTo": [
+                "M4"
+            ],
+            "id": "B3",
+            "level": 0,
+            "parentObject": "M2_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#BufferElement"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_h40"
+            ],
+            "bufferCap": 7,
+            "connectedTo": [
+                "M5"
+            ],
+            "id": "B4",
+            "level": 0,
+            "parentObject": "B4_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#BufferElement"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_h50"
+            ],
+            "bufferCap": 6,
+            "connectedTo": [
+                "M6"
+            ],
+            "id": "B5",
+            "level": 0,
+            "parentObject": "B4_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#BufferElement"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_h60"
+            ],
+            "bufferCap": 7,
+            "connectedTo": [
+                "M7"
+            ],
+            "id": "B6",
+            "level": 0,
+            "parentObject": "M6_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#BufferElement"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_m10"
+            ],
+            "bufferCap": 1,
+            "connectedTo": [
+                "B1"
+            ],
+            "id": "M1",
+            "level": 0,
+            "parentObject": "M1_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_m20"
+            ],
+            "bufferCap": 1,
+            "connectedTo": [
+                "M3"
+            ],
+            "id": "M2",
+            "level": 0,
+            "parentObject": "M2_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_m30"
+            ],
+            "bufferCap": 1,
+            "connectedTo": [
+                "B3"
+            ],
+            "id": "M3",
+            "level": 0,
+            "parentObject": "M2_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_m40"
+            ],
+            "bufferCap": 1,
+            "connectedTo": [
+                "B4"
+            ],
+            "id": "M4",
+            "level": 0,
+            "parentObject": "M4_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_m50"
+            ],
+            "bufferCap": 1,
+            "connectedTo": [
+                "B5"
+            ],
+            "id": "M5",
+            "level": 0,
+            "parentObject": "B4_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_m60"
+            ],
+            "bufferCap": 1,
+            "connectedTo": [
+                "B6"
+            ],
+            "id": "M6",
+            "level": 0,
+            "parentObject": "M6_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "assignmentTo": [
+                "AssemblyLine",
+                "task_m70"
+            ],
+            "bufferCap": 1,
+            "id": "M7",
+            "level": 0,
+            "parentObject": "M7_1",
+            "placementRelTo": "default_building",
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "id": "partA",
+            "type": "http://www.ontoeng.com/factory#ArtifactType"
+        },
+        {
+            "assignmentTo": [
+                "partA"
+            ],
+            "id": "processPlan",
+            "type": "http://www.ontoeng.com/factory#ManufacturingTaskType"
+        },
+        {
+            "id": "task_h10",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_h20"
+            ],
+            "taskTime": 0,
+            "taskTime_LB": 0,
+            "type": "http://www.ontoeng.com/factory#MaterialHandlingTask"
+        },
+        {
+            "id": "task_h20",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_m40"
+            ],
+            "taskTime": 0,
+            "taskTime_LB": 0,
+            "type": "http://www.ontoeng.com/factory#MaterialHandlingTask"
+        },
+        {
+            "id": "task_h30",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_m40"
+            ],
+            "taskTime": 0,
+            "taskTime_LB": 0,
+            "type": "http://www.ontoeng.com/factory#MaterialHandlingTask"
+        },
+        {
+            "id": "task_h40",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_m50"
+            ],
+            "taskTime": 0,
+            "taskTime_LB": 0,
+            "type": "http://www.ontoeng.com/factory#MaterialHandlingTask"
+        },
+        {
+            "id": "task_h50",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_m60"
+            ],
+            "taskTime": 0,
+            "taskTime_LB": 0,
+            "type": "http://www.ontoeng.com/factory#MaterialHandlingTask"
+        },
+        {
+            "id": "task_h60",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_m70"
+            ],
+            "taskTime": 0,
+            "taskTime_LB": 0,
+            "type": "http://www.ontoeng.com/factory#MaterialHandlingTask"
+        },
+        {
+            "id": "task_m10",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_h10"
+            ],
+            "taskTime": 5,
+            "taskTime_LB": 5,
+            "type": "http://www.ontoeng.com/factory#ManufacturingTask"
+        },
+        {
+            "id": "task_m20",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_m30"
+            ],
+            "taskTime": 3,
+            "taskTime_LB": 3,
+            "type": "http://www.ontoeng.com/factory#ManufacturingTask"
+        },
+        {
+            "id": "task_m30",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_h30"
+            ],
+            "taskTime": 3,
+            "taskTime_LB": 3,
+            "type": "http://www.ontoeng.com/factory#ManufacturingTask"
+        },
+        {
+            "id": "task_m40",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_h40"
+            ],
+            "taskTime": 10,
+            "taskTime_LB": 10,
+            "type": "http://www.ontoeng.com/factory#ManufacturingTask"
+        },
+        {
+            "id": "task_m50",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_h50"
+            ],
+            "taskTime": 11,
+            "taskTime_LB": 11,
+            "type": "http://www.ontoeng.com/factory#ManufacturingTask"
+        },
+        {
+            "id": "task_m60",
+            "parentObject": "processPlan",
+            "successors": [
+                "task_h60"
+            ],
+            "taskTime": 12,
+            "taskTime_LB": 12,
+            "type": "http://www.ontoeng.com/factory#ManufacturingTask"
+        },
+        {
+            "id": "task_m70",
+            "parentObject": "processPlan",
+            "taskTime": 13,
+            "taskTime_LB": 13,
+            "type": "http://www.ontoeng.com/factory#ManufacturingTask"
+        },
+        {
+            "connectedTo": [
+                "M4_1"
+            ],
+            "id": "M1_1",
+            "level": 1,
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "connectedTo": [
+                "M4_1"
+            ],
+            "id": "M2_1",
+            "level": 1,
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "connectedTo": [
+                "B4_1"
+            ],
+            "id": "M4_1",
+            "level": 1,
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "connectedTo": [
+                "M6_1"
+            ],
+            "id": "B4_1",
+            "level": 1,
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "connectedTo": [
+                "M7_1"
+            ],
+            "id": "M6_1",
+            "level": 1,
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        },
+        {
+            "connectedTo": [],
+            "id": "M7_1",
+            "level": 1,
+            "type": "http://www.ontoeng.com/factory#MachineTool"
+        }
+    ],
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false
+    },
+    "scene": [
+        "default_building",
+        "partA.1",
+        "partA.2",
+        "partA.3",
+        "partA.4",
+        "partA.5",
+        "partA.6",
+        "partA.7",
+        "partA.8",
+        "compB.1",
+        "compB.2",
+        "compB.3",
+        "compB.4",
+        "compB.5",
+        "compB.6",
+        "compB.7",
+        "compB.8",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M1_1",
+        "M2_1",
+        "M4_1",
+        "B4_1",
+        "M6_1",
+        "M7_1"
+    ]
+}

@@ -1,0 +1,83 @@
+digraph {
+	graph [rankdir=LR style=rounded]
+	node [fontname=helvetica fontsize=30 penwidth=3]
+	edge [arrowhead=open arrowsize=1.8 minlen=1.1 penwidth=3]
+	B1 [fixedsize=true shape=circle width=1.05]
+	B1 -> B2
+	B2 [fixedsize=true shape=circle width=1.05]
+	B2 -> M4
+	B3 [fixedsize=true shape=circle width=1.05]
+	B3 -> M4
+	B4 [fixedsize=true shape=circle width=1.05]
+	B4 -> M5
+	B5 [fixedsize=true shape=circle width=1.05]
+	B5 -> M6
+	B6 [fixedsize=true shape=circle width=1.05]
+	B6 -> M7
+	M1 [shape=square]
+	M1 -> B1
+	M2 [shape=square]
+	M2 -> M3
+	M3 [shape=square]
+	M3 -> B3
+	M4 [shape=square]
+	M4 -> B4
+	M5 [shape=square]
+	M5 -> B5
+	M6 [shape=square]
+	M6 -> B6
+	M7 [shape=square]
+	subgraph cluster_M1_1 {
+		node [shape=box]
+		label=M1_1
+		fontsize=25
+		M1
+	}
+	subgraph cluster_B1_1 {
+		node [shape=box]
+		label=B1_1
+		fontsize=25
+		B1
+		B2
+	}
+	subgraph cluster_M2_1 {
+		node [shape=box]
+		label=M2_1
+		fontsize=25
+		M2
+	}
+	subgraph cluster_M3_1 {
+		node [shape=box]
+		label=M3_1
+		fontsize=25
+		M3
+		B3
+	}
+	subgraph cluster_M4_1 {
+		node [shape=box]
+		label=M4_1
+		fontsize=25
+		M4
+	}
+	subgraph cluster_B4_1 {
+		node [shape=box]
+		label=B4_1
+		fontsize=25
+		B4
+		M5
+	}
+	subgraph cluster_B5_1 {
+		node [shape=box]
+		label=B5_1
+		fontsize=25
+		B5
+		M6
+	}
+	subgraph cluster_B6_1 {
+		node [shape=box]
+		label=B6_1
+		fontsize=25
+		B6
+		M7
+	}
+}
