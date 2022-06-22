@@ -1,3 +1,3 @@
 This folder contains code implementing the Backward Scheduling estimation method (Method II) and the results of its application to the test case presented in the article "A mathematical foundation to support bidirectional mappings between digital models  - an application of multi-scale modelling in manufacturing":
-* **[.py](.py)**, Python script implementing the estimation algorithm based on backward scheduling (Method II)
+* **[schedEstimation.py](.py)**, Python script implementing the estimation algorithm based on backward scheduling (Method II)
 * **[log_est/](log_est/)**, folder containing the estimated log of events associated with the 511 LFMs
