@@ -22,7 +22,7 @@ def estimateFlowTimes(partID,enterTime,exitTime,sequence,resources):
     m.ttime = Var(m.parts, m.trans, domain=NonNegativeReals)
     m.Ctot = Var(domain=NonNegativeReals)
 
-    # Set the objective, i.e., the minimization of total completion time
+    # Set the objective, i.e., the minimization of the total completion time
     m.objective = Objective(expr=m.Ctot, sense=minimize )
 
     # Add constraints
