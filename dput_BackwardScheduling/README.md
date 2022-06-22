@@ -1,0 +1,3 @@
+This folder contains code and data of the test case presented in the article "A mathematical foundation to support bidirectional mappings between digital models  - an application of multi-scale modelling in manufacturing":
+* **.py**, Python script implementing the estimation algorithm based on backward scheduling (Method II)
+* **log_est/**, folder containing the estimated log of events associated with the 511 LFMs
