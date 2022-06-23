@@ -1,3 +1,3 @@
 This folder contains code implementions of hd-lens, the Queuing Reasoning estimation method (Method I) and the results of its application to the test case presented in the article "A mathematical foundation to support bidirectional mappings between digital models  - an application of multi-scale modelling in manufacturing" by Qunfen Qi (Q.Qi@hud.ac.uk), Walter Terkaj (walter.terkaj@stiima.cnr.it), Marcello Urgo (marcello.urgo@polimi.it), Xiangqian Jiang (x.jiang@hud.ac.uk) and Paul J. Scott (p.j.scott@hud.ac.uk):
 * **[src/main/java/](src/main/java/)**, java script implementing lens and delta lens;
-* **[src/test/java/](src/test/java/)**, java script implementing the estimation algorithm based on querying reasoning (Method I)
+* **[src/test/java/](src/test/java/)**, java script implementing the estimation algorithm based on querying reasoning (Method I).
